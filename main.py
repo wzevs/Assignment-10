@@ -1,3 +1,4 @@
+# ლაბირინთი 777 
 def function():
     while True:
         value = input("გამოიცანი რიცხვი (გამოსართავად აკრიფეთ kaput ) : ")  
@@ -6,8 +7,14 @@ def function():
             break  
         try:    
             x = int(value)
-            if x > 0:
+            if x > 0 and x!=777:
                 print("არის კონტაქტი")
+            elif x==777:
+                print("გილოცავ შენ მოიგე ჯეკპოტი !")
+                y = input("აგრძელებ თამაშს? : ")
+                if y == "0":
+                    print("შეგერგოს")
+                    return
             else:
                 print("alo? aloo")    
         except ValueError:
