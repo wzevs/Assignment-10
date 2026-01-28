@@ -1,12 +1,15 @@
 def function():
-    while True:    
+    while True:
+        value = input("გამოიცანი რიცხვი (გამოსართავად აკრიფეთ kaput ) : ")  
+        if value.lower() == 'kaput':
+            print("ნახვამდის!")
+            break  
         try:    
-            x = int(input("შეიყვანეთ რიცხვი :"))
+            x = int(value)
             if x > 0:
                 print("არის კონტაქტი")
             else:
-                print("alo? aloo")
-            break    
+                print("alo? aloo")    
         except ValueError:
             print("შეცდომა: გთხოვთ შეიყვანოთ მთელი რიცხვი სწორ ფორმატში")
 function()
