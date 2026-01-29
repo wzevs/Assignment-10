@@ -1,8 +1,8 @@
-# ლაბირინთი 777 
+# თავიდან თამაშს ერქვა კონტაქტი(პირველი commit საც ამიტომ ქვია contact)  ახლა ლაბირინთი 777 ზე გადაკეთდა კოდიდან გამომდინარე
 def function():
     while True:
-        value = input("გამოიცანი რიცხვი (გამოსართავად აკრიფეთ kaput ) : ")  
-        if value.lower() == 'kaput':
+        value = input("გამოიცანი რიცხვი (გამოსართავად აკრიფეთ exit ) : ")  
+        if value.lower() == 'exit':
             print("ნახვამდის!")
             break  
         try:    
